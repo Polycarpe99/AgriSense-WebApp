@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AgriSense Dashboard 🌾</title>
+<style>
+    /* Google Fonts for a clean, modern look */
+
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f1f7ed;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background: linear-gradient(to right, #2e8b57, #3cb371);
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+main {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+}
+
+section.card {
+  background-color: white;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+section.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card h2 {
+  font-size: 1.8rem;
+  color: #2e8b57;
+  border-bottom: 2px solid #3cb371;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+#weather, #pests, #market {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+ul li a {
+  color: #2e8b57;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+ul li a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  font-size: 1rem;
+  color: #666;
+  border-top: 1px solid #ddd;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+    padding: 1rem;
+  }
+
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  section.card {
+    padding: 1.5rem;
+  }
+
+  footer {
+    font-size: 0.9rem;
+  }
+}
+
+</style>
+</head>
+<body>
+  <header>
+    <h1>🌿 AgriSens WebApp</h1>
+    <p>Ubuhinzi bugezweho kubanyarwanda</p>
+  </header>
+
+  <main>
+    <!-- Weather Card -->
+    <section class="card">
+      <h2>🌤️ amakuru y'iteganyagihe</h2>
+      <div id="weather">
+ 
+      </div>
+    </section>
+
+    <!-- Pest Alerts -->
+    <section class="card">
+      <h2>🐛 amakuru ku ndwara n'ibyonnyi</h2>
+
+      </div>
+    </section>
+
+    <!-- Market Info -->
+    <section class="card">
+      <h2>📈 Amasoko n'ibiciro</h2>
+      <div id="market">
+      
+      </div>
+    </section>
+
+    <!-- Educational Resources -->
+    <section class="card">
+      <h2>📚 Amasomo a jyanye n'Ubuhinzi</h2>
+      <ul>
+        <li><a href="#">✅ uko bategura</a></li>
+        <li><a href="#">🌾 ibihingwa bigezweho</a></li>
+        <li><a href="#">💧 Uburyo bwo kuhira</a></li>
+      </ul>
+    </section>
+
+    <!-- Recommendations -->
+    <section class="card">
+      <h2>🧠 Inama n'imbuzi</h2>
+      <p>Based on today’s weather and pest conditions, consider delaying pesticide use and harvesting beans before the weekend rain.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>AgriSense WebApp © 2025 | Built for Rwandan Farmers with ❤️</p>
+  </footer>
+
+  <script src="/script.js"></script>
+</body>
+</html>
